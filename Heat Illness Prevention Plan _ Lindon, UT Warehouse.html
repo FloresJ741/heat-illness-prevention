@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)file:///C:/Users/jared/Downloads/heat_illness_prevention_plan_lindon_ut_1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heat Illness Prevention Plan | Lindon, UT Warehouse</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+
+  :root {
+    --fire: #FF3B00;
+    --amber: #FF8C00;
+    --yellow: #FFD600;
+    --green: #00B96B;
+    --blue: #0072CE;
+    --navy: #0A1628;
+    --dark: #111827;
+    --mid: #374151;
+    --muted: #6B7280;
+    --light: #F3F4F6;
+    --white: #FFFFFF;
+    --border: #E5E7EB;
+    --red-bg: #FFF1EE;
+    --amber-bg: #FFF8EC;
+    --yellow-bg: #FFFDE7;
+    --green-bg: #EDFBF3;
+    --blue-bg: #EFF6FF;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--light);
+    color: var(--dark);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* ── COVER ── */
+  .cover {
+    background: var(--navy);
+    color: var(--white);
+    padding: 48px 40px 40px;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 320px; height: 320px;
+    background: radial-gradient(circle, rgba(255,60,0,0.35) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: -40px;
+    width: 240px; height: 240px;
+    background: radial-gradient(circle, rgba(255,140,0,0.25) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .cover-inner { position: relative; z-index: 2; }
+  .cover-badge {
+    display: inline-block;
+    background: var(--fire);
+    color: #fff;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+  .cover h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 54px;
+    line-height: 1;
+    letter-spacing: 2px;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+  .cover h1 span { color: var(--yellow); }
+  .cover .sub {
+    font-size: 18px;
+    color: rgba(255,255,255,0.6);
+    font-weight: 300;
+    margin-bottom: 32px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+  }
+  .cover-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+  }
+  .cover-meta-item {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+  .cover-meta-item .label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 4px;
+    font-family: 'DM Mono', monospace;
+  }
+  .cover-meta-item .value {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+  }
+  .cover-alert {
+    margin-top: 28px;
+    background: rgba(255,60,0,0.15);
+    border-left: 4px solid var(--fire);
+    padding: 14px 18px;
+    border-radius: 0 8px 8px 0;
+  }
+  .cover-alert p { color: rgba(255,255,255,0.85); font-size: 13px; }
+  .cover-alert p strong { color: var(--yellow); }
+
+  /* ── EMERGENCY STRIP ── */
+  .emergency-strip {
+    background: var(--fire);
+    color: #fff;
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    page-break-after: always;
+  }
+  .emergency-strip h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    grid-column: 1 / -1;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+  }
+  .e-number {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 12px 16px;
+  }
+  .e-icon { font-size: 26px; }
+  .e-info .label { font-size: 10px; opacity: 0.7; text-transform: uppercase; letter-spacing: 1px; }
+  .e-info .number { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 1px; }
+
+  /* ── MAIN LAYOUT ── */
+  .document { max-width: 900px; margin: 0 auto; padding: 0; background: #fff; }
+
+  .section {
+    padding: 32px 40px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section:last-child { border-bottom: none; }
+
+  /* ── BILINGUAL HEADER ── */
+  .bilingual-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    background: var(--dark);
+    color: #fff;
+    padding: 16px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .bilingual-header .lang {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    opacity: 0.5;
+  }
+  .bilingual-header .lang:last-child { text-align: right; }
+
+  /* ── SECTION HEADER ── */
+  .section-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-header .en h2, .section-header .es h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 1.1;
+  }
+  .section-header .en h2 { color: var(--fire); }
+  .section-header .es h2 { color: var(--amber); }
+  .section-header .en .subtitle,
+  .section-header .es .subtitle {
+    font-size: 12px;
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+
+  /* ── BILINGUAL CONTENT ── */
+  .bilingual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .bilingual .en { border-right: 1px solid var(--border); padding-right: 24px; }
+  .bilingual .es { padding-left: 0; }
+
+  .lang-tag {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 2px;
+    margin-bottom: 8px;
+  }
+  .en .lang-tag { background: #E8F0FE; color: var(--blue); }
+  .es .lang-tag { background: #FFF3E0; color: var(--amber); }
+
+  /* ── HEAT INDEX TABLE ── */
+  .heat-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin: 12px 0;
+  }
+  .heat-table th {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    text-align: left;
+    background: var(--dark);
+    color: #fff;
+  }
+  .heat-table td { padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .heat-table tr:last-child td { border-bottom: none; }
+  .heat-table tr.level-green td:first-child { border-left: 4px solid var(--green); }
+  .heat-table tr.level-yellow td:first-child { border-left: 4px solid var(--yellow); }
+  .heat-table tr.level-amber td:first-child { border-left: 4px solid var(--amber); }
+  .heat-table tr.level-red td:first-child { border-left: 4px solid var(--fire); }
+  .heat-table tr.level-green { background: var(--green-bg); }
+  .heat-table tr.level-yellow { background: var(--yellow-bg); }
+  .heat-table tr.level-amber { background: var(--amber-bg); }
+  .heat-table tr.level-red { background: var(--red-bg); }
+
+  .temp-badge {
+    display: inline-block;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .bg-green { background: var(--green); }
+  .bg-yellow { background: #c8a800; }
+  .bg-amber { background: var(--amber); }
+  .bg-red { background: var(--fire); }
+
+  /* ── ALERT BOXES ── */
+  .alert-box {
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 10px 0;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .alert-box .icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+  .alert-box .content h4 { font-size: 13px; font-weight: 700; margin-bottom: 3px; }
+  .alert-box .content p { font-size: 12px; line-height: 1.5; }
+  .alert-danger { background: var(--red-bg); border: 1px solid rgba(255,59,0,0.2); }
+  .alert-danger .content h4 { color: var(--fire); }
+  .alert-warning { background: var(--amber-bg); border: 1px solid rgba(255,140,0,0.2); }
+  .alert-warning .content h4 { color: var(--amber); }
+  .alert-info { background: var(--blue-bg); border: 1px solid rgba(0,114,206,0.2); }
+  .alert-info .content h4 { color: var(--blue); }
+  .alert-success { background: var(--green-bg); border: 1px solid rgba(0,185,107,0.2); }
+  .alert-success .content h4 { color: var(--green); }
+
+  /* ── SYMPTOM CARDS ── */
+  .symptom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 12px 0;
+  }
+  .symptom-card {
+    border-radius: 8px;
+    padding: 14px;
+    border: 1px solid transparent;
+  }
+  .symptom-card .level {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+  .symptom-card ul { list-style: none; }
+  .symptom-card ul li { font-size: 11px; padding: 2px 0; padding-left: 14px; position: relative; }
+  .symptom-card ul li::before { content: '▸'; position: absolute; left: 0; }
+  .card-mild { background: var(--yellow-bg); border-color: rgba(200,168,0,0.3); }
+  .card-mild .level { color: #8a6d00; }
+  .card-mild ul li::before { color: #c8a800; }
+  .card-moderate { background: var(--amber-bg); border-color: rgba(255,140,0,0.3); }
+  .card-moderate .level { color: #8a5800; }
+  .card-moderate ul li::before { color: var(--amber); }
+  .card-severe { background: var(--red-bg); border-color: rgba(255,59,0,0.3); }
+  .card-severe .level { color: #cc2200; }
+  .card-severe ul li::before { color: var(--fire); }
+
+  /* ── ACTION STEPS ── */
+  .step-list { list-style: none; margin: 10px 0; }
+  .step-list li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: flex-start;
+  }
+  .step-list li:last-child { border-bottom: none; }
+  .step-num {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--dark);
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .step-text { font-size: 12px; line-height: 1.5; padding-top: 4px; }
+  .step-text strong { display: block; font-size: 13px; margin-bottom: 2px; }
+
+  /* ── ACCLIMATIZATION SCHEDULE ── */
+  .accl-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+    margin: 12px 0;
+  }
+  .accl-day {
+    background: var(--light);
+    border-radius: 6px;
+    padding: 10px 8px;
+    text-align: center;
+    border: 1px solid var(--border);
+  }
+  .accl-day .day-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    color: var(--fire);
+    line-height: 1;
+  }
+  .accl-day .day-label {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    margin-bottom: 6px;
+  }
+  .accl-day .workload {
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .accl-day .hours {
+    font-size: 10px;
+    color: var(--muted);
+  }
+  .accl-bar {
+    width: 100%;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    margin: 6px 0 4px;
+    overflow: hidden;
+  }
+  .accl-bar-fill { height: 100%; border-radius: 2px; background: var(--fire); transition: width 0.3s; }
+
+  /* ── WATER SCHEDULE ── */
+  .water-schedule {
+    background: var(--blue-bg);
+    border: 1px solid rgba(0,114,206,0.15);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 10px 0;
+  }
+  .water-schedule h4 {
+    color: var(--blue);
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  .water-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .water-item {
+    background: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgba(0,114,206,0.1);
+  }
+  .water-item .icon { font-size: 20px; margin-bottom: 4px; }
+  .water-item .amount { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--blue); }
+  .water-item .note { font-size: 10px; color: var(--muted); }
+
+  /* ── UTAH CLIMATE BOX ── */
+  .utah-climate {
+    background: linear-gradient(135deg, #0A1628 0%, #1a2d4a 100%);
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 16px 0;
+  }
+  .utah-climate h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: var(--yellow);
+    margin-bottom: 14px;
+  }
+  .climate-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .climate-stat {
+    text-align: center;
+  }
+  .climate-stat .num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    color: var(--yellow);
+    line-height: 1;
+  }
+  .climate-stat .unit { font-size: 12px; color: rgba(255,255,255,0.5); }
+  .climate-stat .label { font-size: 10px; color: rgba(255,255,255,0.6); margin-top: 2px; font-family: 'DM Mono', monospace; }
+
+  /* ── CHECKLIST ── */
+  .checklist { list-style: none; margin: 8px 0; }
+  .checklist li {
+    display: flex;
+    gap: 10px;
+    padding: 6px 0;
+    font-size: 12px;
+    border-bottom: 1px solid var(--border);
+    align-items: flex-start;
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .check-box {
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--border);
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* ── ROLES ── */
+  .roles-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  .role-card {
+    background: var(--light);
+    border-radius: 8px;
+    padding: 14px;
+    border-left: 4px solid var(--navy);
+  }
+  .role-card .role-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .role-card ul { list-style: none; }
+  .role-card ul li { font-size: 11px; padding: 2px 0; padding-left: 14px; position: relative; color: var(--mid); }
+  .role-card ul li::before { content: '•'; position: absolute; left: 2px; color: var(--navy); }
+
+  /* ── FOOTER ── */
+  .doc-footer {
+    background: var(--dark);
+    color: rgba(255,255,255,0.5);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    font-family: 'DM Mono', monospace;
+  }
+  .doc-footer strong { color: rgba(255,255,255,0.8); }
+
+  /* ── DIVIDER ── */
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 16px 0;
+    color: var(--muted);
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ── RESPONSE PROTOCOL ── */
+  .response-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 10px 0;
+  }
+  .flow-step {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 10px 12px;
+    border-radius: 6px;
+    background: var(--light);
+    position: relative;
+  }
+  .flow-step::before {
+    content: '';
+    position: absolute;
+    left: 22px;
+    bottom: -4px;
+    width: 2px;
+    height: 4px;
+    background: var(--border);
+  }
+  .flow-step:last-child::before { display: none; }
+  .flow-icon { font-size: 18px; flex-shrink: 0; }
+  .flow-content h5 { font-size: 12px; font-weight: 700; margin-bottom: 2px; }
+  .flow-content p { font-size: 11px; color: var(--mid); }
+
+  /* ── PRINT STYLES ── */
+  @media print {
+    body { background: #fff; }
+    .bilingual-header { position: static; }
+    .cover { page-break-after: always; }
+    .section { page-break-inside: avoid; }
+  }
+
+  @media (max-width: 700px) {
+    .bilingual { grid-template-columns: 1fr; }
+    .bilingual .en { border-right: none; padding-right: 0; border-bottom: 2px solid var(--border); padding-bottom: 20px; }
+    .cover-meta { grid-template-columns: 1fr; }
+    .symptom-grid { grid-template-columns: 1fr; }
+    .accl-grid { grid-template-columns: repeat(3, 1fr); }
+    .climate-grid { grid-template-columns: repeat(2, 1fr); }
+    .cover h1 { font-size: 36px; }
+    .cover, .section, .emergency-strip { padding: 24px 20px; }
+    .bilingual-header { padding: 12px 20px; }
+    .doc-footer { padding: 16px 20px; flex-direction: column; gap: 6px; }
+  }
+</style>
+</head>
+<body>
+<div class="document">
+
+  <!-- COVER -->
+  <div class="cover">
+    <div class="cover-inner">
+      <div class="cover-badge">⚠ OSHA-Compliant Safety Document</div>
+      <h1>HEAT ILLNESS<br><span>PREVENTION</span></h1>
+      <div class="sub">Emergency Plan &amp; Acclimatization Program</div>
+
+      <div class="cover-meta">
+        <div class="cover-meta-item">
+          <div class="label">Facility</div>
+          <div class="value">Warehouse — Lindon, UT</div>
+        </div>
+        <div class="cover-meta-item">
+          <div class="label">Regulatory Basis</div>
+          <div class="value">OSHA 29 CFR 1910 + NPRM 2024</div>
+        </div>
+        <div class="cover-meta-item">
+          <div class="label">Document Year</div>
+          <div class="value">2026 — Annual Review</div>
+        </div>
+        <div class="cover-meta-item">
+          <div class="label">Risk Season</div>
+          <div class="value">May 15 – Sept 30</div>
+        </div>
+        <div class="cover-meta-item">
+          <div class="label">Altitude</div>
+          <div class="value">4,626 ft (1,410 m) ASL</div>
+        </div>
+        <div class="cover-meta-item">
+          <div class="label">Peak Heat Danger</div>
+          <div class="value">Mid-June · Mid-Late July · Aug</div>
+        </div>
+      </div>
+
+      <div class="cover-alert">
+        <p>⚡ <strong>Utah 2026 Summer Alert:</strong> El Niño conditions are expected to elevate temperatures above historical averages across the Wasatch Front. Lindon recorded temperatures reaching <strong>97°F+</strong> in recent summers, with Salt Lake City hitting <strong>104°F</strong> in June 2025. Indoor warehouse temperatures can exceed outdoor readings by 10–20°F without adequate ventilation.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- EMERGENCY NUMBERS -->
+  <div class="emergency-strip">
+    <h2>🚨 EMERGENCY CONTACTS — CONTACTOS DE EMERGENCIA</h2>
+    <div class="e-number">
+      <div class="e-icon">🚑</div>
+      <div class="e-info">
+        <div class="label">Emergency / Emergencias</div>
+        <div class="number">911</div>
+      </div>
+    </div>
+    <div class="e-number">
+      <div class="e-icon">☣️</div>
+      <div class="e-info">
+        <div class="label">Poison Control / Control de Venenos</div>
+        <div class="number">1-800-222-1222</div>
+      </div>
+    </div>
+    <div class="e-number">
+      <div class="e-icon">🏥</div>
+      <div class="e-info">
+        <div class="label">Utah Valley Hospital</div>
+        <div class="number">(801) 357-7850</div>
+      </div>
+    </div>
+    <div class="e-number">
+      <div class="e-icon">📋</div>
+      <div class="e-info">
+        <div class="label">OSHA Hotline / Línea OSHA</div>
+        <div class="number">1-800-321-OSHA</div>
+      </div>
+    </div>
+    <div class="e-number">
+      <div class="e-icon">👷</div>
+      <div class="e-info">
+        <div class="label">Site Safety Coordinator</div>
+        <div class="number">___________________</div>
+      </div>
+    </div>
+    <div class="e-number">
+      <div class="e-icon">🧊</div>
+      <div class="e-info">
+        <div class="label">Nearest AED / DEA más cercano</div>
+        <div class="number">Location: __________</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY BILINGUAL HEADER -->
+  <div class="bilingual-header">
+    <div class="lang">🇺🇸 ENGLISH</div>
+    <div class="lang">🇲🇽 ESPAÑOL</div>
+  </div>
+
+  <!-- SECTION 1: UTAH CLIMATE CONTEXT -->
+  <div class="section">
+    <div class="section-header">
+      <div class="en">
+        <div class="subtitle">Section 1</div>
+        <h2>UTAH CLIMATE CONTEXT<br>&amp; LOCAL RISK</h2>
+      </div>
+      <div class="es">
+        <div class="subtitle">Sección 1</div>
+        <h2>CLIMA DE UTAH<br>Y RIESGO LOCAL</h2>
+      </div>
+    </div>
+
+    <div class="utah-climate">
+      <h3>📍 Lindon, Utah — 2026 Summer Heat Data</h3>
+      <div class="climate-grid">
+        <div class="climate-stat">
+          <div class="num">97°F</div>
+          <div class="unit">36°C</div>
+          <div class="label">Max Recorded Temp</div>
+        </div>
+        <div class="climate-stat">
+          <div class="num">90°F</div>
+          <div class="unit">32°C</div>
+          <div class="label">Avg Summer High June</div>
+        </div>
+        <div class="climate-stat">
+          <div class="num">7+</div>
+          <div class="unit">days</div>
+          <div class="label">Triple-Digit Days / Year</div>
+        </div>
+        <div class="climate-stat">
+          <div class="num">20°F</div>
+          <div class="unit">+11°C</div>
+          <div class="label">Warehouse Interior Increase</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bilingual">
+      <div class="en">
+        <div class="lang-tag">English</div>
+        <p style="font-size:12px; margin-bottom:10px;">Lindon, Utah is located in the Utah Valley at an elevation of 4,626 ft. Summers are <strong>hot and dry</strong>, with temperatures ranging from 78°F to 97°F+ between June and September. The 2026 summer carries elevated heat risk due to El Niño weather patterns, which have been associated with above-average temperatures across the Wasatch Front.</p>
+        <div class="alert-box alert-danger">
+          <div class="icon">⚠️</div>
+          <div class="content">
+            <h4>Warehouse Risk Amplifier</h4>
+            <p>Metal roofs, loading docks, and limited airflow can raise indoor temps <strong>10–20°F above outdoor readings</strong>. A 90°F outside day can feel like 105–110°F inside an unventilated warehouse.</p>
+          </div>
+        </div>
+        <div class="alert-box alert-warning" style="margin-top:8px;">
+          <div class="icon">⛰️</div>
+          <div class="content">
+            <h4>High Altitude Effect</h4>
+            <p>At 4,626 ft, workers <strong>dehydrate faster</strong> and UV radiation is more intense. New employees from lower elevations need extended acclimatization periods.</p>
+          </div>
+        </div>
+      </div>
+      <div class="es">
+        <div class="lang-tag">Español</div>
+        <p style="font-size:12px; margin-bottom:10px;">Lindon, Utah está ubicado en el Valle de Utah a una elevación de 4,626 pies. Los veranos son <strong>calientes y secos</strong>, con temperaturas que varían entre 78°F y 97°F+ de junio a septiembre. El verano 2026 tiene mayor riesgo de calor por el fenómeno El Niño, asociado con temperaturas por encima del promedio histórico.</p>
+        <div class="alert-box alert-danger">
+          <div class="icon">⚠️</div>
+          <div class="content">
+            <h4>Amplificador de Riesgo en el Almacén</h4>
+            <p>Los techos metálicos, muelles de carga y ventilación limitada pueden elevar la temperatura interior <strong>10–20°F por encima de la temperatura exterior</strong>. Un día de 90°F afuera puede sentirse como 105–110°F adentro sin ventilación.</p>
+          </div>
+        </div>
+        <div class="alert-box alert-warning" style="margin-top:8px;">
+          <div class="icon">⛰️</div>
+          <div class="content">
+            <h4>Efecto de la Altitud</h4>
+            <p>A 4,626 pies de altitud, los trabajadores <strong>se deshidratan más rápido</strong> y la radiación UV es más intensa. Los empleados nuevos de zonas de menor altitud necesitan períodos de aclimatación más prolongados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: HEAT INDEX THRESHOLDS -->
+  <div class="section">
+    <div class="section-header">
+      <div class="en">
+        <div class="subtitle">Section 2</div>
+        <h2>HEAT INDEX LEVELS<br>&amp; OSHA THRESHOLDS</h2>
+      </div>
+      <div class="es">
+        <div class="subtitle">Sección 2</div>
+        <h2>NIVELES DE ÍNDICE<br>DE CALOR OSHA</h2>
+      </div>
+    </div>
+
+    <table class="heat-table">
+      <tbody><tr>
+        <th>Level / Nivel</th>
+        <th>Heat Index / Índice de Calor</th>
+        <th>Risk / Riesgo</th>
+        <th>Required Actions (EN) — Acciones Requeridas (ES)</th>
+      </tr>
+      <tr class="level-green">
+        <td><span class="temp-badge bg-green">CAUTION / PRECAUCIÓN</span></td>
+        <td><strong>80–90°F</strong><br>27–32°C</td>
+        <td style="font-size:11px;">Low / Bajo</td>
+        <td style="font-size:11px;">
+          <strong>EN:</strong> Water available; basic heat safety awareness training.<br>
+          <strong>ES:</strong> Agua disponible; capacitación básica de seguridad en calor.
+        </td>
+      </tr>
+      <tr class="level-yellow">
+        <td><span class="temp-badge bg-yellow">MODERATE / MODERADO</span></td>
+        <td><strong>91–103°F</strong><br>33–39°C</td>
+        <td style="font-size:11px;">Moderate / Moderado</td>
+        <td style="font-size:11px;">
+          <strong>EN:</strong> Mandatory rest breaks every 2 hrs; buddy system; shade/cool area access; monitor workers.<br>
+          <strong>ES:</strong> Descansos obligatorios cada 2 hrs; sistema de compañeros; acceso a zona fresca; monitorear trabajadores.
+        </td>
+      </tr>
+      <tr class="level-amber">
+        <td><span class="temp-badge bg-amber">HIGH / ALTO</span></td>
+        <td><strong>103–115°F</strong><br>39–46°C</td>
+        <td style="font-size:11px;">High / Alto</td>
+        <td style="font-size:11px;">
+          <strong>EN:</strong> 15-min rest every 2 hrs (paid); cooling stations; supervisor check-ins every hour; limit strenuous tasks.<br>
+          <strong>ES:</strong> 15 min descanso cada 2 hrs (pagado); estaciones de enfriamiento; supervisores cada hora; limitar tareas extenuantes.
+        </td>
+      </tr>
+      <tr class="level-red">
+        <td><span class="temp-badge bg-red">DANGER / PELIGRO</span></td>
+        <td><strong>115°F+</strong><br>46°C+</td>
+        <td style="font-size:11px;">Very High / Muy Alto</td>
+        <td style="font-size:11px;">
+          <strong>EN:</strong> Stop non-essential work; rotate shifts; call 911 for any heat illness symptoms; document all incidents.<br>
+          <strong>ES:</strong> Detener trabajo no esencial; rotar turnos; llamar 911 ante síntomas; documentar todos los incidentes.
+        </td>
+      </tr>
+    </tbody></table>
+
+    <div class="bilingual" style="margin-top:16px;">
+      <div class="en">
+        <div class="lang-tag">English</div>
+        <div class="alert-box alert-info">
+          <div class="icon">📏</div>
+          <div class="content">
+            <h4>OSHA 2026 Trigger Points</h4>
+            <p><strong>80°F:</strong> OSHA's initial trigger — water, shade, and cooling access must be available at all times. <strong>90°F:</strong> Stricter protocols apply including mandatory paid rest breaks and worker monitoring. These apply to INDOOR environments when warehouse temperatures reach these thresholds.</p>
+          </div>
+        </div>
+      </div>
+      <div class="es">
+        <div class="lang-tag">Español</div>
+        <div class="alert-box alert-info">
+          <div class="icon">📏</div>
+          <div class="content">
+            <h4>Puntos de Activación OSHA 2026</h4>
+            <p><strong>80°F:</strong> Punto de activación inicial — agua, sombra y zonas de enfriamiento deben estar disponibles en todo momento. <strong>90°F:</strong> Protocolos más estrictos incluyendo descansos pagados obligatorios y monitoreo de trabajadores. Aplica a ambientes INTERIORES cuando las temperaturas del almacén alcanzan estos umbrales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: SYMPTOMS & RECOGNITION -->
+  <div class="section">
+    <div class="section-header">
+      <div class="en">
+        <div class="subtitle">Section 3</div>
+        <h2>RECOGNIZING HEAT<br>ILLNESS SYMPTOMS</h2>
+      </div>
+      <div class="es">
+        <div class="subtitle">Sección 3</div>
+        <h2>RECONOCER SÍNTOMAS<br>DE ENFERMEDAD POR CALOR</h2>
+      </div>
+    </div>
+
+    <div class="bilingual">
+      <div class="en">
+        <div class="lang-tag">English</div>
+        <p style="font-size:12px; margin-bottom:10px;"><strong>Know these 3 levels:</strong> Early recognition saves lives. If YOU feel these symptoms — STOP work immediately and tell a supervisor.</p>
+        <div class="symptom-grid" style="grid-template-columns: 1fr;">
+          <div class="symptom-card card-mild" style="margin-bottom:8px;">
+            <div class="level">🟡 HEAT CRAMPS / HEAT RASH (Mild)</div>
+            <ul>
+              <li>Painful muscle cramps (legs, arms, abdomen)</li>
+              <li>Heavy sweating during exertion</li>
+              <li>Red, bumpy skin rash (heat rash)</li>
+              <li>Thirst and fatigue</li>
+            </ul>
+            <div style="margin-top:8px; padding:6px 8px; background:rgba(0,0,0,0.05); border-radius:4px; font-size:11px;">
+              <strong>Action:</strong> Rest in cool area · Drink water/electrolytes · Do not return to heavy work
+            </div>
+          </div>
+          <div class="symptom-card card-moderate" style="margin-bottom:8px;">
+            <div class="level">🟠 HEAT EXHAUSTION (Moderate — Seek Help)</div>
+            <ul>
+              <li>Heavy sweating, cold/pale/clammy skin</li>
+              <li>Weakness, dizziness, fainting</li>
+              <li>Fast/weak pulse, nausea/vomiting</li>
+              <li>Headache, mild confusion</li>
+            </ul>
+            <div style="margin-top:8px; padding:6px 8px; background:rgba(0,0,0,0.05); border-radius:4px; font-size:11px;">
+              <strong>Action:</strong> Move to cool area · Cool with wet cloths · Drink water · Call supervisor · If vomiting occurs, call 911
+            </div>
+          </div>
+          <div class="symptom-card card-severe">
+            <div class="level">🔴 HEAT STROKE (SEVERE — CALL 911 IMMEDIATELY)</div>
+            <ul>
+              <li>High body temp (103°F+)</li>
+              <li>Hot, red, DRY OR damp skin</li>
+              <li>Rapid/strong pulse</li>
+              <li>Confusion, slurred speech, loss of consciousness</li>
+              <li>Seizures (in extreme cases)</li>
+            </ul>
+            <div style="margin-top:8px; padding:6px 8px; background:rgba(255,59,0,0.1); border-radius:4px; font-size:11px; color:#cc2200;">
+              <strong>⚡ THIS IS A MEDICAL EMERGENCY — CALL 911 NOW · Do NOT give water if unconscious · Begin cooling immediately</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="es">
+        <div class="lang-tag">Español</div>
+        <p style="font-size:12px; margin-bottom:10px;"><strong>Conoce estos 3 niveles:</strong> Reconocerlos a tiempo salva vidas. Si TÚ sientes estos síntomas — PARA de trabajar inmediatamente e informa a tu supervisor.</p>
+        <div class="symptom-grid" style="grid-template-columns: 1fr;">
+          <div class="symptom-card card-mild" style="margin-bottom:8px;">
+            <div class="level">🟡 CALAMBRES / SARPULLIDO POR CALOR (Leve)</div>
+            <ul>
+              <li>Calambres musculares dolorosos (piernas, brazos, abdomen)</li>
+              <li>Sudoración excesiva al trabajar</li>
+              <li>Sarpullido rojo en la piel</li>
+              <li>Sed y fatiga</li>
+            </ul>
+            <div style="margin-top:8px; padding:6px 8px; background:rgba(0,0,0,0.05); border-radius:4px; font-size:11px;">
+              <strong>Acción:</strong> Descansar en zona fresca · Beber agua/electrolitos · No regresar a trabajo pesado
+            </div>
+          </div>
+          <div class="symptom-card card-moderate" style="margin-bottom:8px;">
+            <div class="level">🟠 AGOTAMIENTO POR CALOR (Moderado — Busca Ayuda)</div>
+            <ul>
+              <li>Sudoración excesiva, piel fría/pálida/húmeda</li>
+              <li>Debilidad, mareo, desmayo</li>
+              <li>Pulso rápido/débil, náuseas/vómitos</li>
+              <li>Dolor de cabeza, leve confusión</li>
+            </ul>
+            <div style="margin-top:8px; padding:6px 8px; background:rgba(0,0,0,0.05); border-radius:4px; font-size:11px;">
+              <strong>Acción:</strong> Mover a zona fresca · Enfriar con paños húmedos · Beber agua · Llamar supervisor · Si vomita, llamar 911
+            </div>
+          </div>
+          <div class="symptom-card card-severe">
+            <div class="level">🔴 GOLPE DE CALOR (GRAVE — LLAMA 911 INMEDIATAMENTE)</div>
+            <ul>
+              <li>Temperatura corporal alta (103°F / 39.4°C+)</li>
+              <li>Piel caliente, roja, SECA O húmeda</li>
+              <li>Pulso rápido y fuerte</li>
+              <li>Confusión, habla incoherente, pérdida de conocimiento</li>
+              <li>Convulsiones (en casos extremos)</li>
+            </ul>
+            <div style="margin-top:8px; padding:6px 8px; background:rgba(255,59,0,0.1); border-radius:4px; font-size:11px; color:#cc2200;">
+              <strong>⚡ ESTO ES EMERGENCIA MÉDICA — LLAMA 911 AHORA · NO dar agua si está inconsciente · Comenzar a enfriar inmediatamente</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 4: EMERGENCY RESPONSE PROTOCOL -->
+  <div class="section">
+    <div class="section-header">
+      <div class="en">
+        <div class="subtitle">Section 4</div>
+        <h2>EMERGENCY RESPONSE<br>STEP-BY-STEP PROTOCOL</h2>
+      </div>
+      <div class="es">
+        <div class="subtitle">Sección 4</div>
+        <h2>PROTOCOLO DE RESPUESTA<br>DE EMERGENCIA PASO A PASO</h2>
+      </div>
+    </div>
+
+    <div class="bilingual">
+      <div class="en">
+        <div class="lang-tag">English</div>
+
+        <div class="divider">If someone shows heat illness symptoms</div>
+
+        <div class="response-flow">
+          <div class="flow-step">
+            <div class="flow-icon">🔴</div>
+            <div class="flow-content">
+              <h5>STEP 1 — RECOGNIZE &amp; ALERT</h5>
+              <p>Identify symptoms. Tell supervisor or coworker immediately. Do NOT leave the person alone.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-icon">🏃</div>
+            <div class="flow-content">
+              <h5>STEP 2 — MOVE TO COOL AREA</h5>
+              <p>Move them to the air-conditioned break room or coolest shaded area. Remove excess clothing/PPE.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-icon">🧊</div>
+            <div class="flow-content">
+              <h5>STEP 3 — BEGIN COOLING</h5>
+              <p>Apply cool wet cloths to neck, armpits, groin. Use fans. Apply ice packs if available. Do NOT use ice bath unless directed by medic.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-icon">💧</div>
+            <div class="flow-content">
+              <h5>STEP 4 — HYDRATE (if conscious)</h5>
+              <p>Give cool water or electrolyte drink. Small sips every few minutes. DO NOT give if unconscious or vomiting.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-icon">📞</div>
+            <div class="flow-content">
+              <h5>STEP 5 — CALL FOR HELP</h5>
+              <p><strong>Heat Stroke → Call 911 immediately.</strong> Heat Exhaustion → Call supervisor + monitor closely. Stay with the person until help arrives.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-icon">📋</div>
+            <div class="flow-content">
+              <h5>STEP 6 — DOCUMENT INCIDENT</h5>
+              <p>Supervisor must complete an OSHA incident report. Record time, temperature, work activity, symptoms, and actions taken. Report within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="es">
+        <div class="lang-tag">Español</div>
+
+        <div class="divider">Si alguien muestra síntomas de enfermedad por calor</div>
+
+        <div class="response-flow">
+          <div class="flow-step">
+            <div class="flow-icon">🔴</div>
+            <div class="flow-content">
+              <h5>PASO 1 — RECONOCER Y ALERTAR</h5>
+              <p>Identificar síntomas. Informar al supervisor o compañero inmediatamente. NO dejar a la persona sola.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-icon">🏃</div>
+            <div class="flow-content">
+              <h5>PASO 2 — MOVER A ZONA FRESCA</h5>
+              <p>Llevarlo al área de descanso con aire acondicionado o al lugar más fresco disponible. Retirar exceso de ropa/EPP.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-icon">🧊</div>
+            <div class="flow-content">
+              <h5>PASO 3 — COMENZAR A ENFRIAR</h5>
+              <p>Aplicar paños fríos húmedos en cuello, axilas e ingle. Usar ventiladores. Aplicar bolsas de hielo si están disponibles. NO usar baño de hielo sin indicación médica.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-icon">💧</div>
+            <div class="flow-content">
+              <h5>PASO 4 — HIDRATAR (si está consciente)</h5>
+              <p>Dar agua fría o bebida con electrolitos. Pequeños sorbos cada pocos minutos. NO dar si está inconsciente o vomitando.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-icon">📞</div>
+            <div class="flow-content">
+              <h5>PASO 5 — PEDIR AYUDA</h5>
+              <p><strong>Golpe de calor → Llamar 911 de inmediato.</strong> Agotamiento → Llamar al supervisor + monitorear de cerca. Quedarse con la persona hasta que llegue ayuda.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-icon">📋</div>
+            <div class="flow-content">
+              <h5>PASO 6 — DOCUMENTAR EL INCIDENTE</h5>
+              <p>El supervisor debe completar un reporte de incidente OSHA. Registrar hora, temperatura, actividad, síntomas y acciones tomadas. Reportar en 24 horas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5: ACCLIMATIZATION PROGRAM -->
+  <div class="section">
+    <div class="section-header">
+      <div class="en">
+        <div class="subtitle">Section 5</div>
+        <h2>ACCLIMATIZATION<br>PROGRAM (OSHA REQUIRED)</h2>
+      </div>
+      <div class="es">
+        <div class="subtitle">Sección 5</div>
+        <h2>PROGRAMA DE<br>ACLIMATACIÓN (REQUERIDO OSHA)</h2>
+      </div>
+    </div>
+
+    <div class="bilingual">
+      <div class="en">
+        <div class="lang-tag">English</div>
+        <p style="font-size:12px; margin-bottom:12px;">OSHA requires an acclimatization plan for <strong>new employees AND workers returning after 1+ week absence</strong>. The body needs 7–14 days to adapt to heat. Do NOT assign full workload on day 1 in hot conditions.</p>
+
+        <div class="accl-grid">
+          <div class="accl-day">
+            <div class="day-label">Day / Día</div>
+            <div class="day-num">1–2</div>
+            <div class="accl-bar"><div class="accl-bar-fill" style="width:20%"></div></div>
+            <div class="workload">20% Load</div>
+            <div class="hours">Max 4 hrs heat exposure</div>
+          </div>
+          <div class="accl-day">
+            <div class="day-label">Day / Día</div>
+            <div class="day-num">3–4</div>
+            <div class="accl-bar"><div class="accl-bar-fill" style="width:40%"></div></div>
+            <div class="workload">40% Load</div>
+            <div class="hours">Max 5 hrs heat exposure</div>
+          </div>
+          <div class="accl-day">
+            <div class="day-label">Day / Día</div>
+            <div class="day-num">5–6</div>
+            <div class="accl-bar"><div class="accl-bar-fill" style="width:60%"></div></div>
+            <div class="workload">60% Load</div>
+            <div class="hours">Max 6 hrs heat exposure</div>
+          </div>
+          <div class="accl-day">
+            <div class="day-label">Day / Día</div>
+            <div class="day-num">7–8</div>
+            <div class="accl-bar"><div class="accl-bar-fill" style="width:80%"></div></div>
+            <div class="workload">80% Load</div>
+            <div class="hours">Standard breaks required</div>
+          </div>
+          <div class="accl-day">
+            <div class="day-label">Day / Día</div>
+            <div class="day-num">9–14</div>
+            <div class="accl-bar"><div class="accl-bar-fill" style="width:100%"></div></div>
+            <div class="workload">100% Load</div>
+            <div class="hours">Full shift; monitor first 2 weeks</div>
+          </div>
+        </div>
+
+        <div class="alert-box alert-warning" style="margin-top:12px;">
+          <div class="icon">⚠️</div>
+          <div class="content">
+            <h4>High-Risk Individuals</h4>
+            <p>Workers over 65, pregnant, on medications, with heart/kidney conditions, or with previous heat illness need <strong>extended acclimatization and closer monitoring</strong>. Supervisor must conduct a health check before assignment to hot work areas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="es">
+        <div class="lang-tag">Español</div>
+        <p style="font-size:12px; margin-bottom:12px;">OSHA requiere un plan de aclimatación para <strong>empleados nuevos Y trabajadores que regresan después de 1+ semana de ausencia</strong>. El cuerpo necesita 7–14 días para adaptarse al calor. NO asignar carga completa el día 1 en condiciones de calor.</p>
+
+        <div class="accl-grid">
+          <div class="accl-day">
+            <div class="day-label">Day / Día</div>
+            <div class="day-num">1–2</div>
+            <div class="accl-bar"><div class="accl-bar-fill" style="width:20%"></div></div>
+            <div class="workload">20% Carga</div>
+            <div class="hours">Máx 4 hrs exposición al calor</div>
+          </div>
+          <div class="accl-day">
+            <div class="day-label">Day / Día</div>
+            <div class="day-num">3–4</div>
+            <div class="accl-bar"><div class="accl-bar-fill" style="width:40%"></div></div>
+            <div class="workload">40% Carga</div>
+            <div class="hours">Máx 5 hrs exposición al calor</div>
+          </div>
+          <div class="accl-day">
+            <div class="day-label">Day / Día</div>
+            <div class="day-num">5–6</div>
+            <div class="accl-bar"><div class="accl-bar-fill" style="width:60%"></div></div>
+            <div class="workload">60% Carga</div>
+            <div class="hours">Máx 6 hrs exposición al calor</div>
+          </div>
+          <div class="accl-day">
+            <div class="day-label">Day / Día</div>
+            <div class="day-num">7–8</div>
+            <div class="accl-bar"><div class="accl-bar-fill" style="width:80%"></div></div>
+            <div class="workload">80% Carga</div>
+            <div class="hours">Descansos estándar requeridos</div>
+          </div>
+          <div class="accl-day">
+            <div class="day-label">Day / Día</div>
+            <div class="day-num">9–14</div>
+            <div class="accl-bar"><div class="accl-bar-fill" style="width:100%"></div></div>
+            <div class="workload">100% Carga</div>
+            <div class="hours">Turno completo; monitorear 2 semanas</div>
+          </div>
+        </div>
+
+        <div class="alert-box alert-warning" style="margin-top:12px;">
+          <div class="icon">⚠️</div>
+          <div class="content">
+            <h4>Individuos de Alto Riesgo</h4>
+            <p>Trabajadores mayores de 65, embarazadas, con medicamentos, con condiciones cardíacas/renales, o con historial de enfermedad por calor necesitan <strong>aclimatación extendida y mayor monitoreo</strong>. El supervisor debe hacer una evaluación de salud antes de asignarlos a áreas calientes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 6: WATER & REST REQUIREMENTS -->
+  <div class="section">
+    <div class="section-header">
+      <div class="en">
+        <div class="subtitle">Section 6</div>
+        <h2>WATER, REST &amp;<br>SHADE REQUIREMENTS</h2>
+      </div>
+      <div class="es">
+        <div class="subtitle">Sección 6</div>
+        <h2>REQUISITOS DE AGUA,<br>DESCANSO Y SOMBRA</h2>
+      </div>
+    </div>
+
+    <div class="bilingual">
+      <div class="en">
+        <div class="lang-tag">English</div>
+
+        <div class="water-schedule">
+          <h4>💧 WATER REQUIREMENTS (OSHA)</h4>
+          <div class="water-grid">
+            <div class="water-item">
+              <div class="icon">🥤</div>
+              <div class="amount">1 Cup</div>
+              <div class="note">Every 15–20 minutes during work</div>
+            </div>
+            <div class="water-item">
+              <div class="icon">🌡️</div>
+              <div class="amount">50–60°F</div>
+              <div class="note">Optimal water temperature</div>
+            </div>
+            <div class="water-item">
+              <div class="icon">📍</div>
+              <div class="amount">≤50 ft</div>
+              <div class="note">Max distance to water source</div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="step-list" style="margin-top:12px;">
+          <li>
+            <div class="step-num">A</div>
+            <div class="step-text"><strong>Water Location Rule</strong> — Water must be available within 50 feet of all work areas. Employer provides water — workers do NOT need to bring their own.</div>
+          </li>
+          <li>
+            <div class="step-num">B</div>
+            <div class="step-text"><strong>Rest Breaks (80–90°F)</strong> — Standard breaks + opportunity to cool down. Workers must be allowed to rest when feeling unwell.</div>
+          </li>
+          <li>
+            <div class="step-num">C</div>
+            <div class="step-text"><strong>Rest Breaks (90°F+)</strong> — Mandatory 15-min PAID rest break every 2 hours minimum. Breaks in cool/shaded area — NOT outside in the heat.</div>
+          </li>
+          <li>
+            <div class="step-num">D</div>
+            <div class="step-text"><strong>Cool Area Requirements</strong> — A space cooled below 80°F (fan + shade minimum) must be available for rest and recovery. Break room AC must be maintained.</div>
+          </li>
+          <li>
+            <div class="step-num">E</div>
+            <div class="step-text"><strong>Electrolytes</strong> — During extreme heat or heavy sweating, electrolyte supplements (sports drinks or salt tablets per doctor guidance) should be made available.</div>
+          </li>
+        </ul>
+      </div>
+      <div class="es">
+        <div class="lang-tag">Español</div>
+
+        <div class="water-schedule">
+          <h4>💧 REQUISITOS DE AGUA (OSHA)</h4>
+          <div class="water-grid">
+            <div class="water-item">
+              <div class="icon">🥤</div>
+              <div class="amount">1 Taza</div>
+              <div class="note">Cada 15–20 minutos durante el trabajo</div>
+            </div>
+            <div class="water-item">
+              <div class="icon">🌡️</div>
+              <div class="amount">10–15°C</div>
+              <div class="note">Temperatura óptima del agua</div>
+            </div>
+            <div class="water-item">
+              <div class="icon">📍</div>
+              <div class="amount">≤15 m</div>
+              <div class="note">Distancia máx a fuente de agua</div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="step-list" style="margin-top:12px;">
+          <li>
+            <div class="step-num">A</div>
+            <div class="step-text"><strong>Regla de Ubicación del Agua</strong> — El agua debe estar disponible a menos de 50 pies de todas las áreas de trabajo. El empleador provee el agua — los trabajadores NO necesitan traer la propia.</div>
+          </li>
+          <li>
+            <div class="step-num">B</div>
+            <div class="step-text"><strong>Descansos (80–90°F)</strong> — Descansos estándar + oportunidad de enfriarse. Los trabajadores DEBEN poder descansar si no se sienten bien.</div>
+          </li>
+          <li>
+            <div class="step-num">C</div>
+            <div class="step-text"><strong>Descansos (90°F+)</strong> — Descanso PAGADO obligatorio de 15 minutos cada 2 horas como mínimo. Los descansos deben ser en zona fresca — NO afuera en el calor.</div>
+          </li>
+          <li>
+            <div class="step-num">D</div>
+            <div class="step-text"><strong>Requisitos de Zona Fresca</strong> — Debe haber un espacio enfriado por debajo de 80°F disponible para descanso y recuperación. El aire acondicionado del cuarto de descanso debe mantenerse en funcionamiento.</div>
+          </li>
+          <li>
+            <div class="step-num">E</div>
+            <div class="step-text"><strong>Electrolitos</strong> — Durante calor extremo o sudoración intensa, deben estar disponibles suplementos de electrolitos (bebidas deportivas o tabletas de sal según indicación médica).</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 7: PREVENTION CONTROLS -->
+  <div class="section">
+    <div class="section-header">
+      <div class="en">
+        <div class="subtitle">Section 7</div>
+        <h2>PREVENTION &amp;<br>ENGINEERING CONTROLS</h2>
+      </div>
+      <div class="es">
+        <div class="subtitle">Sección 7</div>
+        <h2>PREVENCIÓN Y<br>CONTROLES DE INGENIERÍA</h2>
+      </div>
+    </div>
+
+    <div class="bilingual">
+      <div class="en">
+        <div class="lang-tag">English</div>
+        <p style="font-size:12px; margin-bottom:10px;"><strong>OSHA Hierarchy of Controls</strong> — Apply in this order (most effective first):</p>
+        <ul class="step-list">
+          <li>
+            <div class="step-num" style="background:var(--green);">1</div>
+            <div class="step-text"><strong>Engineering Controls (Best)</strong> — Install/maintain HVAC and ventilation. Use industrial fans to move air. Insulate hot surfaces. Install radiant heat barriers on roof and walls. Ensure loading dock doors are managed to reduce heat infiltration.</div>
+          </li>
+          <li>
+            <div class="step-num" style="background:var(--blue);">2</div>
+            <div class="step-text"><strong>Administrative Controls</strong> — Schedule heavy lifting tasks for early morning (before 10am). Rotate workers through hot zones. Increase workforce during peak heat to reduce individual exposure. Buddy system during heat alerts.</div>
+          </li>
+          <li>
+            <div class="step-num" style="background:var(--amber);">3</div>
+            <div class="step-text"><strong>Work Practice Controls</strong> — Pace work to reduce exertion. Allow self-pacing. Train workers to recognize their own limits. Encourage "heat buddy" check-ins every 30 minutes when index is 90°F+.</div>
+          </li>
+          <li>
+            <div class="step-num" style="background:var(--fire);">4</div>
+            <div class="step-text"><strong>PPE (Last Resort Supplement)</strong> — Cooling vests for high-exertion tasks. Moisture-wicking clothing. Lightweight, light-colored garments. Portable cooling towels. NOTE: PPE supplements but does NOT replace other controls.</div>
+          </li>
+        </ul>
+      </div>
+      <div class="es">
+        <div class="lang-tag">Español</div>
+        <p style="font-size:12px; margin-bottom:10px;"><strong>Jerarquía de Controles OSHA</strong> — Aplicar en este orden (el más efectivo primero):</p>
+        <ul class="step-list">
+          <li>
+            <div class="step-num" style="background:var(--green);">1</div>
+            <div class="step-text"><strong>Controles de Ingeniería (Mejores)</strong> — Instalar/mantener HVAC y ventilación. Usar ventiladores industriales. Aislar superficies calientes. Instalar barreras de calor radiante en el techo y paredes. Gestionar puertas de muelle de carga para reducir entrada de calor.</div>
+          </li>
+          <li>
+            <div class="step-num" style="background:var(--blue);">2</div>
+            <div class="step-text"><strong>Controles Administrativos</strong> — Programar tareas pesadas temprano (antes de las 10am). Rotar trabajadores en zonas calientes. Aumentar personal en horas pico de calor para reducir exposición individual. Sistema de compañeros durante alertas de calor.</div>
+          </li>
+          <li>
+            <div class="step-num" style="background:var(--amber);">3</div>
+            <div class="step-text"><strong>Controles de Prácticas de Trabajo</strong> — Moderar ritmo para reducir el esfuerzo. Permitir auto-regulación. Capacitar a trabajadores para reconocer sus propios límites. Chequeos de "compañero de calor" cada 30 minutos cuando el índice sea 90°F+.</div>
+          </li>
+          <li>
+            <div class="step-num" style="background:var(--fire);">4</div>
+            <div class="step-text"><strong>EPP (Último Recurso Complementario)</strong> — Chalecos de enfriamiento para tareas de alto esfuerzo. Ropa que absorbe la humedad. Prendas ligeras y de colores claros. Toallas de enfriamiento portátiles. NOTA: El EPP complementa pero NO reemplaza otros controles.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 8: ROLES & RESPONSIBILITIES -->
+  <div class="section">
+    <div class="section-header">
+      <div class="en">
+        <div class="subtitle">Section 8</div>
+        <h2>ROLES &amp;<br>RESPONSIBILITIES</h2>
+      </div>
+      <div class="es">
+        <div class="subtitle">Sección 8</div>
+        <h2>ROLES Y<br>RESPONSABILIDADES</h2>
+      </div>
+    </div>
+
+    <div class="bilingual">
+      <div class="en">
+        <div class="lang-tag">English</div>
+        <div class="roles-grid">
+          <div class="role-card" style="border-color: var(--fire);">
+            <div class="role-title" style="color:var(--fire);">🧑‍💼 HEAT SAFETY COORDINATOR</div>
+            <ul>
+              <li>Monitor daily heat index (check weather before shift)</li>
+              <li>Activate appropriate heat level protocols</li>
+              <li>Ensure water, shade, and cooling areas are ready</li>
+              <li>Conduct daily walkthrough of hot zones</li>
+              <li>Maintain incident log and training records</li>
+              <li>Post heat alerts on bulletin boards</li>
+            </ul>
+          </div>
+          <div class="role-card" style="border-color: var(--amber);">
+            <div class="role-title" style="color:var(--amber);">👷 SUPERVISORS / LEADS</div>
+            <ul>
+              <li>Enforce rest break schedules</li>
+              <li>Watch workers for early heat illness signs</li>
+              <li>Implement buddy system on 90°F+ days</li>
+              <li>Know acclimatization schedule for new workers</li>
+              <li>Never pressure workers to skip breaks</li>
+              <li>Immediately respond to any heat illness report</li>
+            </ul>
+          </div>
+          <div class="role-card" style="border-color: var(--green);">
+            <div class="role-title" style="color:var(--green);">👤 ALL WORKERS / TODOS LOS TRABAJADORES</div>
+            <ul>
+              <li>Drink water regularly — before feeling thirsty</li>
+              <li>Report symptoms immediately to supervisor</li>
+              <li>Watch out for coworkers (buddy system)</li>
+              <li>Take ALL scheduled rest breaks</li>
+              <li>Wear light, appropriate clothing</li>
+              <li>Attend all required heat safety training</li>
+            </ul>
+          </div>
+          <div class="role-card" style="border-color: var(--blue);">
+            <div class="role-title" style="color:var(--blue);">🏢 EMPLOYER / MANAGEMENT</div>
+            <ul>
+              <li>Maintain written Heat Illness Prevention Plan</li>
+              <li>Provide water, shade, rest — at no cost to workers</li>
+              <li>Train all workers before first heat season shift</li>
+              <li>Investigate all heat illness incidents</li>
+              <li>Comply with OSHA General Duty Clause</li>
+              <li>Update plan annually (this document: 2026)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="es">
+        <div class="lang-tag">Español</div>
+        <div class="roles-grid">
+          <div class="role-card" style="border-color: var(--fire);">
+            <div class="role-title" style="color:var(--fire);">🧑‍💼 COORDINADOR DE SEGURIDAD TÉRMICA</div>
+            <ul>
+              <li>Monitorear el índice de calor diariamente (verificar clima antes del turno)</li>
+              <li>Activar protocolos según nivel de calor</li>
+              <li>Asegurar agua, sombra y zonas de enfriamiento listas</li>
+              <li>Realizar recorrido diario por zonas calientes</li>
+              <li>Mantener registro de incidentes y capacitaciones</li>
+              <li>Publicar alertas de calor en tableros de anuncios</li>
+            </ul>
+          </div>
+          <div class="role-card" style="border-color: var(--amber);">
+            <div class="role-title" style="color:var(--amber);">👷 SUPERVISORES / LÍDERES</div>
+            <ul>
+              <li>Hacer cumplir los horarios de descanso</li>
+              <li>Vigilar a los trabajadores en busca de signos tempranos de enfermedad por calor</li>
+              <li>Implementar sistema de compañeros cuando sea 90°F+</li>
+              <li>Conocer el horario de aclimatación para trabajadores nuevos</li>
+              <li>Nunca presionar a los trabajadores a saltar descansos</li>
+              <li>Responder inmediatamente a cualquier reporte de malestar por calor</li>
+            </ul>
+          </div>
+          <div class="role-card" style="border-color: var(--green);">
+            <div class="role-title" style="color:var(--green);">👤 TODOS LOS TRABAJADORES</div>
+            <ul>
+              <li>Beber agua regularmente — antes de tener sed</li>
+              <li>Reportar síntomas inmediatamente al supervisor</li>
+              <li>Cuidar a los compañeros (sistema de compañeros)</li>
+              <li>Tomar TODOS los descansos programados</li>
+              <li>Usar ropa ligera y apropiada</li>
+              <li>Asistir a toda capacitación obligatoria de seguridad en calor</li>
+            </ul>
+          </div>
+          <div class="role-card" style="border-color: var(--blue);">
+            <div class="role-title" style="color:var(--blue);">🏢 EMPLEADOR / GERENCIA</div>
+            <ul>
+              <li>Mantener Plan de Prevención de Enfermedad por Calor escrito</li>
+              <li>Proveer agua, sombra, descanso — sin costo para trabajadores</li>
+              <li>Capacitar a todos antes del primer turno de la temporada de calor</li>
+              <li>Investigar todos los incidentes relacionados con el calor</li>
+              <li>Cumplir con la Cláusula de Deber General de OSHA</li>
+              <li>Actualizar el plan anualmente (este documento: 2026)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 9: TRAINING REQUIREMENTS -->
+  <div class="section">
+    <div class="section-header">
+      <div class="en">
+        <div class="subtitle">Section 9</div>
+        <h2>TRAINING<br>REQUIREMENTS (OSHA)</h2>
+      </div>
+      <div class="es">
+        <div class="subtitle">Sección 9</div>
+        <h2>REQUISITOS DE<br>CAPACITACIÓN (OSHA)</h2>
+      </div>
+    </div>
+
+    <div class="bilingual">
+      <div class="en">
+        <div class="lang-tag">English</div>
+        <p style="font-size:12px; margin-bottom:10px;">Training must be provided <strong>before workers begin work in hot environments</strong> and annually thereafter. Training must be conducted in a language workers understand.</p>
+        <p style="font-size:12px; margin-bottom:10px;"><strong>Required training topics include:</strong></p>
+        <ul class="checklist">
+          <li><div class="check-box"></div>How the body reacts to heat; risk factors for heat illness</li>
+          <li><div class="check-box"></div>Signs and symptoms of heat cramps, heat exhaustion, and heat stroke</li>
+          <li><div class="check-box"></div>First aid procedures for heat illness — including calling 911</li>
+          <li><div class="check-box"></div>Importance of acclimatization for new/returning workers</li>
+          <li><div class="check-box"></div>Why drinking water regularly is critical (before feeling thirsty)</li>
+          <li><div class="check-box"></div>Employee rights: workers CAN stop work if facing imminent heat danger</li>
+          <li><div class="check-box"></div>Buddy system: how to monitor coworkers for symptoms</li>
+          <li><div class="check-box"></div>Location of first aid kit, AED, cooling supplies, and emergency exits</li>
+          <li><div class="check-box"></div>How to report symptoms without fear of retaliation</li>
+          <li><div class="check-box"></div>Supervisor responsibilities and emergency contacts</li>
+        </ul>
+        <div class="alert-box alert-success" style="margin-top:12px;">
+          <div class="icon">✅</div>
+          <div class="content">
+            <h4>Documentation Required</h4>
+            <p>Maintain training records with worker name, date, trainer, and topics covered. Retain for 3 years minimum. OSHA may request these during inspections.</p>
+          </div>
+        </div>
+      </div>
+      <div class="es">
+        <div class="lang-tag">Español</div>
+        <p style="font-size:12px; margin-bottom:10px;">La capacitación debe darse <strong>antes de que los trabajadores comiencen en ambientes calurosos</strong> y anualmente. Debe realizarse en el idioma que los trabajadores entiendan.</p>
+        <p style="font-size:12px; margin-bottom:10px;"><strong>Temas requeridos de capacitación:</strong></p>
+        <ul class="checklist">
+          <li><div class="check-box"></div>Cómo reacciona el cuerpo al calor; factores de riesgo de enfermedad por calor</li>
+          <li><div class="check-box"></div>Signos y síntomas de calambres, agotamiento y golpe de calor</li>
+          <li><div class="check-box"></div>Procedimientos de primeros auxilios — incluyendo llamar al 911</li>
+          <li><div class="check-box"></div>Importancia de la aclimatación para trabajadores nuevos/que regresan</li>
+          <li><div class="check-box"></div>Por qué beber agua regularmente es crítico (antes de tener sed)</li>
+          <li><div class="check-box"></div>Derechos del trabajador: los trabajadores PUEDEN detener el trabajo ante peligro inminente de calor</li>
+          <li><div class="check-box"></div>Sistema de compañeros: cómo monitorear a compañeros en busca de síntomas</li>
+          <li><div class="check-box"></div>Ubicación del botiquín, DEA, suministros de enfriamiento y salidas de emergencia</li>
+          <li><div class="check-box"></div>Cómo reportar síntomas sin miedo a represalias</li>
+          <li><div class="check-box"></div>Responsabilidades del supervisor y contactos de emergencia</li>
+        </ul>
+        <div class="alert-box alert-success" style="margin-top:12px;">
+          <div class="icon">✅</div>
+          <div class="content">
+            <h4>Documentación Requerida</h4>
+            <p>Mantener registros de capacitación con nombre del trabajador, fecha, instructor y temas cubiertos. Conservar por un mínimo de 3 años. OSHA puede solicitar estos durante las inspecciones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 10: DAILY CHECKLIST -->
+  <div class="section">
+    <div class="section-header">
+      <div class="en">
+        <div class="subtitle">Section 10</div>
+        <h2>DAILY HEAT SAFETY<br>SUPERVISOR CHECKLIST</h2>
+      </div>
+      <div class="es">
+        <div class="subtitle">Sección 10</div>
+        <h2>LISTA DE VERIFICACIÓN<br>DIARIA DE CALOR</h2>
+      </div>
+    </div>
+
+    <div class="bilingual">
+      <div class="en">
+        <div class="lang-tag">English</div>
+        <p style="font-size:12px; margin-bottom:10px;"><strong>Complete this checklist every shift during May 15 – September 30:</strong></p>
+        <p style="font-size:11px; color:var(--muted); margin-bottom:8px;">Date: __________ | Supervisor: __________________ | Heat Index: ______°F</p>
+        <ul class="checklist">
+          <li><div class="check-box"></div>Checked today's heat index before shift start</li>
+          <li><div class="check-box"></div>Posted heat level warning on bulletin board</li>
+          <li><div class="check-box"></div>Water stations stocked and within 50 ft of work areas</li>
+          <li><div class="check-box"></div>Break room / cool area temperature below 80°F and accessible</li>
+          <li><div class="check-box"></div>All new/returning workers assigned to acclimatization schedule</li>
+          <li><div class="check-box"></div>Briefed workers on today's heat conditions at shift start</li>
+          <li><div class="check-box"></div>Buddy system assigned for any area above 90°F</li>
+          <li><div class="check-box"></div>First aid kit stocked and location confirmed</li>
+          <li><div class="check-box"></div>Fans and ventilation systems checked and operational</li>
+          <li><div class="check-box"></div>Emergency contact list posted and visible</li>
+          <li><div class="check-box"></div>Workers reminded of right to take breaks without retaliation</li>
+          <li><div class="check-box"></div>No heat illness symptoms reported (or incident form completed if yes)</li>
+        </ul>
+      </div>
+      <div class="es">
+        <div class="lang-tag">Español</div>
+        <p style="font-size:12px; margin-bottom:10px;"><strong>Completar esta lista en cada turno del 15 de mayo al 30 de septiembre:</strong></p>
+        <p style="font-size:11px; color:var(--muted); margin-bottom:8px;">Fecha: __________ | Supervisor: __________________ | Índice de calor: ______°F</p>
+        <ul class="checklist">
+          <li><div class="check-box"></div>Se verificó el índice de calor de hoy antes del inicio del turno</li>
+          <li><div class="check-box"></div>Se publicó la alerta de nivel de calor en el tablero de anuncios</li>
+          <li><div class="check-box"></div>Estaciones de agua surtidas y a menos de 50 pies de las áreas de trabajo</li>
+          <li><div class="check-box"></div>Cuarto de descanso / zona fresca por debajo de 80°F y accesible</li>
+          <li><div class="check-box"></div>Todos los trabajadores nuevos/que regresan asignados al horario de aclimatación</li>
+          <li><div class="check-box"></div>Se informó a los trabajadores sobre las condiciones de calor de hoy al inicio del turno</li>
+          <li><div class="check-box"></div>Sistema de compañeros asignado para cualquier área por encima de 90°F</li>
+          <li><div class="check-box"></div>Botiquín de primeros auxilios surtido y ubicación confirmada</li>
+          <li><div class="check-box"></div>Ventiladores y sistemas de ventilación verificados y operativos</li>
+          <li><div class="check-box"></div>Lista de contactos de emergencia publicada y visible</li>
+          <li><div class="check-box"></div>Trabajadores recordados de su derecho a tomar descansos sin represalias</li>
+          <li><div class="check-box"></div>No se reportaron síntomas de enfermedad por calor (o se completó formulario de incidente si los hay)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="doc-footer">
+    <div>
+      <strong>Lindon, UT Warehouse — Heat Illness Prevention Plan</strong><br>
+      OSHA 29 CFR 1910 | General Duty Clause | NPRM Heat Standard 2024/2026
+    </div>
+    <div style="text-align:right;">
+      <strong>Effective: May 15, 2026</strong><br>
+      Review Annually | Next Review: May 2027
+    </div>
+  </div>
+
+</div>
+
+
+</body></html>
